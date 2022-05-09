@@ -18,9 +18,11 @@
 
 ## 截图
 
-![OpenCore](Screenshots/Beelink-SEI8-Hackintosh.png)
+![OpenCore](Screenshots/Beelink-SEI8.png)
 
-![Beelink-SEI8-Hackintosh](Screenshots/Beelink-SEI8-DualDisplays.png)
+![Beelink-SEI-Hackintosh](Screenshots/Beelink-SEI8-Hackintosh.png)
+
+![Beelink-SEI8-DualDisplays](Screenshots/Beelink-SEI8-DualDisplays.png)
 
 ![Beelink-SEI8-Hackintool](Screenshots/Beelink-SEI8-Hackintool.png)
 
