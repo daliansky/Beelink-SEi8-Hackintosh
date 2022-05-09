@@ -18,4 +18,20 @@
 
 ## 截图
 
-![OpenCore](./Screenshots/SEI8.png)
+![OpenCore](Screenshots/Beelink-SEI8-Hackintosh.png)
+
+![Beelink-SEI8-Hackintosh](Screenshots/Beelink-SEI8-DualDisplays.png)
+
+![Beelink-SEI8-Hackintool](Screenshots/Beelink-SEI8-Hackintool.png)
+
+![Beelink-SEI8-Hackintool-Misc](Screenshots/Beelink-SEI8-Hackintool-Misc.png)
+
+![Beelink-SEI8-Hackintool-PM](Screenshots/Beelink-SEI8-Hackintool-PM.png)
+
+![Beelink-SEI8-Hackintool-USB](Screenshots/Beelink-SEI8-Hackintool-USB.png)
+
+![Beelink-SEI8-Monitors](Screenshots/Beelink-SEI8-Monitors.png)
+
+![Beelink-SEI8-UC](Screenshots/Beelink-SEI8-UC.png)
+
+![Beelink-SEI8-UC2](Screenshots/Beelink-SEI8-UC2.png)
