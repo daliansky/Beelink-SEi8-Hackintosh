@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
     <dict>
+        <key>#Build Date</key>
+        <string>5-17-2022</string>
+        <key>#EFI Update Repository</key>
+        <string>https://github.com/daliansky/Beelink-SEI8-Hackintosh</string>
+        <key>#Maker by</key>
+        <string>Beelink SEi8 mini小主机专用EFI</string>
+        <key>#OpenCore Version</key>
+        <string>v0.8.0 Release</string>
+        <key>#Posted on</key>
+        <string>黑果小兵的部落阁 https://blog.daliansky.net</string>
         <key>ACPI</key>
         <dict>
             <key>Add</key>
@@ -20,15 +30,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-EC-USBX.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-PLUG-DRTNIA.aml</string>
+                    <string>SSDT-PLUG-SEi8.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -44,7 +46,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-USBW.aml</string>
+                    <string>SSDT-USB-Reset.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -120,7 +122,7 @@
                     <key>Count</key>
                     <integer>1</integer>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>Find</key>
                     <data>X0NSUw==</data>
                     <key>Limit</key>
@@ -463,7 +465,7 @@
                     <key>BundlePath</key>
                     <string>USBPorts.kext</string>
                     <key>Comment</key>
-                    <string>V1.0</string>
+                    <string>V1.0 | USBPorts for Beelink SEi8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -540,6 +542,24 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/RealtekRTL8111</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>HibernationFixup.kext</string>
+                    <key>Comment</key>
+                    <string>V1.4.6</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/HibernationFixup</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -687,7 +707,7 @@
                 <key>PickerMode</key>
                 <string>External</string>
                 <key>PickerVariant</key>
-                <string>Acidanthera\GoldenGate</string>
+                <string>DalianSky\Beelink</string>
                 <key>PollAppleHotKeys</key>
                 <false/>
                 <key>ShowPicker</key>
@@ -812,11 +832,11 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>-v igfxfw=2 keepsyms=1 debug=0x100 alcid=1 -cdfon igfxonln=1</string>
+                    <string>igfxfw=2 keepsyms=1 debug=0x100 alcid=1 -cdfon igfxonln=1</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
-                    <data>cnUtUlU6MjUy</data>
+                    <data></data>
                     <key>run-efi-updater</key>
                     <string>No</string>
                 </dict>
@@ -919,7 +939,7 @@
                 <key>EnableJumpstart</key>
                 <true/>
                 <key>GlobalConnect</key>
-                <false/>
+                <true/>
                 <key>HideVerbose</key>
                 <true/>
                 <key>JumpstartHotPlug</key>

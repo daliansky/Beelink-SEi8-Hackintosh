@@ -7,7 +7,7 @@
 | 电脑型号  |                         Beelink SEI8                         |
 | 操作系统  |     macOS `Mojave` / `Catalina` / `Big Sur` / `Monterey`     |
 |  处理器   |                     英特尔 酷睿 i5-8279U                     |
-|   内存    |                        16 GB 2400MHz                         |
+|   内存    |           64 GB 2400MHz(支持2400Mhz-3200Mhz DDR4)            |
 |   硬盘1   |                   KINGSTON OM8PDP3256B-A01                   |
 |  硬盘2/3  |                    可接SATA 2.5寸硬盘/SSD                    |
 |   显卡    |                 Intel Iris Plus Graphics 655                 |
@@ -18,7 +18,7 @@
 
 ## 截图
 
-![OpenCore](Screenshots/Beelink-SEI8.png)
+![OpenCore](Screenshots/Beelink-SEI8-OC.png)
 
 ![Beelink-SEI-Hackintosh](Screenshots/Beelink-SEI8-Hackintosh.png)
 
@@ -36,4 +36,6 @@
 
 ![Beelink-SEI8-UC](Screenshots/Beelink-SEI8-UC.png)
 
-![Beelink-SEI8-UC2](Screenshots/Beelink-SEI8-UC2.png)
+![Beelink-SEI8-UC2](Screenshots/Beelink-SEI8-iTerm2.png)
+
+![Beelink-SEI8-Sensei](Screenshots/Beelink-SEI8-Sensei.png)
