@@ -16,6 +16,12 @@
 | 无线网卡  | m.2 NGFF插槽，默认出厂为 `Intel AX200` 已更换为[BCM94360Z3](https://blog.daliansky.net/uploads/WeChatandShop.png) |
 | 有线网卡1 |     Realtek RTL8168H/8111H PCI Express Gigabit Ethernet      |
 
+## 更新日志
+
+- 5-31-2022
+  - 修复了睡眠唤醒问题
+  - 开通[wiki](https://github.com/daliansky/Beelink-SEi8-Hackintosh/wiki)
+
 ## 截图
 
 ![OpenCore](Screenshots/Beelink-SEI8-OC.png)
