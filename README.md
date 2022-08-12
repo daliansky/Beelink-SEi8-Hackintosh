@@ -5,7 +5,7 @@
 |   规格    |                           详细信息                           |
 | :-------: | :----------------------------------------------------------: |
 | 电脑型号  |                         Beelink SEI8                         |
-| 操作系统  |     macOS `Mojave` / `Catalina` / `Big Sur` / `Monterey`     |
+| 操作系统  | macOS `Mojave` / `Catalina` / `Big Sur` / `Monterey` / `Ventura` |
 |  处理器   |                     英特尔 酷睿 i5-8279U                     |
 |   内存    |           64 GB 2400MHz(支持2400Mhz-3200Mhz DDR4)            |
 |   硬盘1   |                   KINGSTON OM8PDP3256B-A01                   |
@@ -18,6 +18,11 @@
 
 ## 更新日志
 
+- 8-12-2022
+  - 更新 `OpenCore` 到 `v0.8.3`
+  - 新增 `OpenCore` 主题
+    - 更新部分图标
+  
 - 5-31-2022
   - 修复了睡眠唤醒问题
   - 开通[wiki](https://github.com/daliansky/Beelink-SEi8-Hackintosh/wiki)
