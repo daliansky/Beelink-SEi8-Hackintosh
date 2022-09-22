@@ -255,7 +255,7 @@
         <dict>
             <key>Add</key>
             <dict>
-                <key>#PciRoot(0x0)/Pci(0x1f,0x3)</key>
+                <key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
                 <dict>
                     <key>#layout-id</key>
                     <string>1</string>
@@ -351,7 +351,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.7.5 | Audio patches</string>
+                    <string>V1.7.6 | Audio patches</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -446,6 +446,42 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/RealtekRTL8111</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>FakePCIID.kext</string>
+                    <key>Comment</key>
+                    <string>V1.3.16</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/FakePCIID</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>FakePCIID_Intel_HDMI_Audio.kext</string>
+                    <key>Comment</key>
+                    <string>V1.3.16</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/FakePCIID_Intel_HDMI_Audio</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -719,6 +755,8 @@
                     <true/>
                     <key>Flavour</key>
                     <string>OpenShell:UEFIShell:Shell</string>
+                    <key>FullNvramAccess</key>
+                    <false/>
                     <key>Name</key>
                     <string>UEFI Shell</string>
                     <key>Path</key>
@@ -727,6 +765,28 @@
                     <false/>
                     <key>TextMode</key>
                     <false/>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Auxiliary</key>
+                    <true/>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Flavour</key>
+                    <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <true/>
+                    <key>Name</key>
+                    <string>CleanNvram</string>
+                    <key>Path</key>
+                    <string>CleanNvram.efi</string>
+                    <key>RealPath</key>
+                    <true/>
+                    <key>TextMode</key>
+                    <true/>
                 </dict>
             </array>
         </dict>
@@ -741,11 +801,11 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>alcid=1 -igfxrpsc=1</string>
+                    <string>alcid=1 -igfxrpsc=1 -lilubetaall</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
-                    <data></data>
+                    <string>en-US:0</string>
                     <key>run-efi-updater</key>
                     <string>No</string>
                 </dict>
@@ -770,7 +830,7 @@
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string>C07147404GUKXPG8C</string>
+                <string>C07837301GUKXPG1H</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
@@ -784,9 +844,9 @@
                 <key>SystemProductName</key>
                 <string>Macmini8,1</string>
                 <key>SystemSerialNumber</key>
-                <string>C07GQ9YVJYVX</string>
+                <string>C07XDSY8JYVX</string>
                 <key>SystemUUID</key>
-                <string>6C7D4874-9EC3-4C63-9170-8A98E9051E6B</string>
+                <string>8D1E89C2-5605-4D86-A07C-8644A5E718C1</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>

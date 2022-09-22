@@ -18,11 +18,14 @@
 
 ## 更新日志
 
+- 9-22-2022
+  - 更新 `OpenCore` 到 `v0.8.4`
+  - 修复了 `HDMI` 音频输出问题
+  
 - 8-12-2022
   - 更新 `OpenCore` 到 `v0.8.3`
   - 新增 `OpenCore` 主题
     - 更新部分图标
-  
 - 5-31-2022
   - 修复了睡眠唤醒问题
   - 开通[wiki](https://github.com/daliansky/Beelink-SEi8-Hackintosh/wiki)
