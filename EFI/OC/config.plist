@@ -257,10 +257,18 @@
             <dict>
                 <key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
                 <dict>
+                    <key>#device-id</key>
+                    <data>cJ0AAA==</data>
                     <key>#layout-id</key>
                     <string>1</string>
-                    <key>device-id</key>
-                    <data>cJ0AAA==</data>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,31,3</string>
+                    <key>device_type</key>
+                    <string>Audio device</string>
+                    <key>hda-gfx</key>
+                    <string>onboard-1</string>
+                    <key>model</key>
+                    <string>High Definition Audio Controller</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
@@ -461,7 +469,7 @@
                     <key>Comment</key>
                     <string>V1.3.16</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/FakePCIID</string>
                     <key>MaxKernel</key>
@@ -479,7 +487,7 @@
                     <key>Comment</key>
                     <string>V1.3.16</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/FakePCIID_Intel_HDMI_Audio</string>
                     <key>MaxKernel</key>
