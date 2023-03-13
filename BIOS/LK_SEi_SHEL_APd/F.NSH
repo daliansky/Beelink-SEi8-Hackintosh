@@ -1,1 +1,0 @@
-AfuEfix64.efi CFL01_202120301_LK_SEi_APd.BIN  /P /B /N /R
