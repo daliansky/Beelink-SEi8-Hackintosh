@@ -3,6 +3,7 @@
 Prod/
 Owner/
 Release/
+BIOS/
 wiki/
 */.DS_Store
 oldConfig.plist
