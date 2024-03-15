@@ -1,14 +1,14 @@
 # Beelink-SEI8-Hackintosh
 
 ![release version](https://img.shields.io/github/v/release/daliansky/Beelink-SEi8-Hackintosh?style=for-the-badge) 
-[![OpenCore version](https://img.shields.io/badge/OpenCore-0.9.0-informational.svg)](https://github.com/acidanthera/OpenCorePkg)![MacOS version](https://img.shields.io/badge/Ventura-13.2.1-informational.svg) [![MacOS version](https://img.shields.io/badge/Monterey-12.6.3%2021G419-informational.svg)](https://www.apple.com/macos) [![MacOS version](https://img.shields.io/badge/Bigsur-11.7.3%2020G1116-informational.svg)](https://www.apple.com/macos)
+[![OpenCore version](https://img.shields.io/badge/OpenCore-0.9.9-informational.svg)](https://github.com/acidanthera/OpenCorePkg)![MacOS version](https://img.shields.io/badge/Sonoma-14.4-informational.svg) ![MacOS version](https://img.shields.io/badge/Ventura-13.6.5-informational.svg) [![MacOS version](https://img.shields.io/badge/Monterey-12.7.4-informational.svg)](https://www.apple.com/macos) [![MacOS version](https://img.shields.io/badge/Bigsur-11.7.10-informational.svg)](https://www.apple.com/macos)
 
 ## 电脑配置
 
 |   规格    |                           详细信息                           |
 | :-------: | :----------------------------------------------------------: |
 | 电脑型号  |                         Beelink SEI8                         |
-| 操作系统  | macOS `Mojave` / `Catalina` / `Big Sur` / `Monterey` / `Ventura` |
+| 操作系统  | macOS `Mojave` / `Catalina` / `Big Sur` / `Monterey` / `Ventura` / `Sonoma` |
 |  处理器   |                     英特尔 酷睿 i5-8279U                     |
 |   内存    |           64 GB 2400MHz(支持2400Mhz-3200Mhz DDR4)            |
 |   硬盘1   |                   KINGSTON OM8PDP3256B-A01                   |
@@ -21,15 +21,17 @@
 
 ## 更新日志
 
+- 3-15-2024
+  - 更新`OpenCore Mod` 到 `v0.9.9`
+  - 更新 `IOSkywalkFamily.kext` 到 `v1.1.0`
+  - `Sonoma` 如果想更新到 `14.4` 请务必先更新 `EFI` ，然后再安装 [OCLP](https://pan.daliansky.net/APPS/OCLP/OCLP.md)，重启后，再升级到 `14.4` 否则会出现 `WIFI` 无法启用的问题
 - 3-13-2023
   - 更新 `OpenCore` 到 `v0.9.0`
   
   - Release `v1.1.0`
-  
 - 1-30-2023
   - 更新 `OpenCore` 到 `v0.8.9` 开发版
   - Release `v1.0.0`
-
 - 10-10-2022
   - 更新 `OpenCore` 到 `v0.8.5`
 - 9-22-2022
