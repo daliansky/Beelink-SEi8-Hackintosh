@@ -592,34 +592,45 @@ public:
 	}
 
 	/**
+	 *  Find one pattern with optional masking within a block of memory
+	 *
+	 *  @param pattern           pattern to search
+	 *  @param patternMask           pattern mask
+	 *  @param patternSize           size of pattern
+	 *  @param data           a block of memory
+	 *  @param dataSize           size of memory
+	 *  @param dataOffset           data offset, to be set by this function
+	 *
+	 *  @return true if pattern is found in data
+	 */
+	EXPORT static bool findPattern(const void *pattern, const void *patternMask, size_t patternSize, const void *data, size_t dataSize, size_t *dataOffset);
+
+	/**
+	 *  Simple find and replace with masking in kernel memory.
+	 */
+	EXPORT static bool findAndReplaceWithMask(void *data, size_t dataSize, const void *find, size_t findSize, const void *findMask, size_t findMaskSize, const void *replace, size_t replaceSize, const void *replaceMask, size_t replaceMaskSize, size_t count=0, size_t skip=0);
+
+	/**
 	 *  Simple find and replace in kernel memory.
 	 */
 	static inline bool findAndReplace(void *data, size_t dataSize, const void *find, size_t findSize, const void *replace, size_t replaceSize) {
-		void *res;
-		if (UNLIKELY((res = lilu_os_memmem(data, dataSize, find, findSize)) != nullptr)) {
-			if (UNLIKELY(MachInfo::setKernelWriting(true, KernelPatcher::kernelWriteLock) != KERN_SUCCESS)) {
-				SYSLOG("patcher", "failed to obtain write permissions for f/r");
-				return false;
-			}
-
-			lilu_os_memcpy(res, replace, replaceSize);
-
-			if (UNLIKELY(MachInfo::setKernelWriting(false, KernelPatcher::kernelWriteLock) != KERN_SUCCESS)) {
-				SYSLOG("patcher", "failed to restore write permissions for f/r");
-			}
-
-			return true;
-		}
-
-		return false;
+		return findAndReplaceWithMask(data, dataSize, find, findSize, nullptr, 0, replace, replaceSize, nullptr, 0, 0, 0);
 	}
-	
+
 	/**
 	 *  Simple find and replace in kernel memory but require both `find` and `replace` buffers to have the same length
 	 */
 	template <size_t N>
 	static inline bool findAndReplace(void *data, size_t dataSize, const uint8_t (&find)[N], const uint8_t (&replace)[N]) {
 		return findAndReplace(data, dataSize, find, N, replace, N);
+	}
+
+	/**
+	 *  Simple find and replace with masking in kernel memory but require both `find` and `replace` buffers and masking buffers to have the same length
+	 */
+	template <size_t N>
+	static inline bool findAndReplaceWithMask(void *data, size_t dataSize, const uint8_t (&find)[N], const uint8_t (&findMask)[N], const uint8_t (&replace)[N], const uint8_t (&replaceMask)[N], size_t count, size_t skip) {
+		return findAndReplaceWithMask(data, dataSize, find, N, findMask, N, replace, N, replaceMask, N, count, skip);
 	}
 
 private:
