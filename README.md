@@ -2,7 +2,7 @@
 
 ![release version](https://img.shields.io/github/v/release/daliansky/Beelink-SEi8-Hackintosh?style=for-the-badge) 
 
-[![OpenCore version](https://img.shields.io/badge/OpenCore-1.0.1-informational.svg)](https://github.com/acidanthera/OpenCorePkg) ![MacOS Sequoia](https://img.shields.io/badge/Sequoia-informational.svg) ![MacOS Sonoma](https://img.shields.io/badge/Sonoma-informational.svg) ![MacOS Ventura](https://img.shields.io/badge/Ventura-informational.svg) [![MacOS Monterey](https://img.shields.io/badge/Monterey-informational.svg)](https://www.apple.com/macos) [![MacOS Big Sur](https://img.shields.io/badge/Bigsur-informational.svg)](https://www.apple.com/macos)
+[![OpenCore version](https://img.shields.io/badge/OpenCore-1.0.4-informational.svg)](https://github.com/acidanthera/OpenCorePkg) ![MacOS Sequoia](https://img.shields.io/badge/Sequoia-informational.svg) ![MacOS Sonoma](https://img.shields.io/badge/Sonoma-informational.svg) ![MacOS Ventura](https://img.shields.io/badge/Ventura-informational.svg) [![MacOS Monterey](https://img.shields.io/badge/Monterey-informational.svg)](https://www.apple.com/macos) [![MacOS Big Sur](https://img.shields.io/badge/Bigsur-informational.svg)](https://www.apple.com/macos)
 
 ## 电脑配置
 
@@ -22,10 +22,12 @@
 
 ## 更新日志
 
+- 4-24-2025
+  - 更新`OpenCore` 到 `v1.0.5`
+  
 - 8-13-2024
   - 更新`OpenCore` 到 `v1.0.1`
   - 支持 `Sequoia`
-  
 - 3-15-2024
   - 更新`OpenCore Mod` 到 `v0.9.9`
   - 更新 `IOSkywalkFamily.kext` 到 `v1.1.0`
